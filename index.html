@@ -3,66 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta de Papelería</title>
+    <title>Catálogo de Artículos de Papelería</title>
     <style>
-        /* Estilos CSS pueden ir aquí */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
+        /* Estilos para el encabezado */
         header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 20px 0;
+            background-image: url('ruta/a/la/imagen.jpg'); /* Ruta a la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Altura del encabezado */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            color: black; /* Cambiado a negro para mejorar la legibilidad */
         }
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 20px 0;
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
-        h1, h2, h3 {
-            font-weight: normal;
-            color: #333;
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
         }
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
+
+        h1 {
+            font-size: 36px; /* Tamaño del título */
+            margin-bottom: 10px; /* Ajuste el margen inferior */
+            margin-top: 0; /* Elimina el margen superior predeterminado */
         }
-        /* Estilos para productos */
-        .producto {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        /* Estilos para los productos */
+        #productos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+            grid-auto-rows: auto; /* Altura automática de las filas */
+            gap: 20px; /* Espacio entre las casillas de productos */
+            justify-items: center; /* Centrar los elementos horizontalmente dentro de las casillas */
+        }
+
+        article {
+            border: 1px solid #ccc; /* Borde para las casillas de productos */
             padding: 20px;
-            margin-bottom: 20px;
-        }
-        .producto img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        .producto h3 {
-            margin-top: 0;
-        }
-        .producto p {
-            margin-bottom: 10px;
-        }
-        /* Estilos para el pie de página */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Bienvenido a nuestra tienda de papelería Papelinda UwU (Ayuda ;-;)</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <article>
+                <h2>Plumones</h2>
+                <p>Descripción de los plumones...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Colores</h2>
+                <p>Descripción de los colores...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Libretas</h2>
+                <p>Descripción de las libretas...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Lápices</h2>
+                <p>Descripción de los lápices...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Gomas</h2>
+                <p>Descripción de las gomas...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Papeles</h2>
+                <p>Descripción de los papeles...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Lapiceras</h2>
+                <p>Descripción de las lapiceras...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+            <article>
+                <h2>Sacapuntas</h2>
+                <p>Descripción de los sacapuntas...</p>
+                <p>Precio: $XX.XX</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Papelería Papelinda</p>
+    </footer>
+</body>
+</html>
+
+
 
